@@ -3,16 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나만의 앱</title>
+    <title>숏폼 금지구역</title>
     <link rel="manifest" href="manifest.json">
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; background-color: #f0f2f5; }
-        h1 { color: #333; }
-        p { color: #666; }
+        body { 
+            font-family: 'Apple SD Gothic Neo', sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 40px 20px; 
+            background-color: #1a1a1a; 
+            color: #ffffff; 
+        }
+        h1 { color: #ff4757; font-size: 24px; margin-bottom: 10px; }
+        p { color: #a4b0be; font-size: 15px; line-height: 1.5; }
+        .card {
+            background: #2f3542;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <h1>안녕하세요!</h1>
-    <p>내가 직접 만든 첫 번째 웹 앱입니다.</p>
+
+    <h1>🚫 숏폼 차단 존</h1>
+    <p>지금 쇼츠나 릴스를 켜면 또 30분이 순삭됩니다!<br>대신 멋진 목표를 위해 집중해 볼까요?</p>
+
+    <div class="card">
+        <h3>💡 오늘의 다짐</h3>
+        <p id="quote">"시간은 가장 소중한 자산이다."</p>
+    </div>
+
+    <button class="btn" onclick="alert('참 잘하셨습니다! 스마트폰을 내려놓고 심호흡을 해보세요.')">심호흡 1번 하기</button>
+
 </body>
 </html>
